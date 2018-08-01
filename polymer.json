@@ -1,5 +1,5 @@
 {
-    "root": "d:/projects/polymer3",
+    "root": "D:/projects/polymer3",
     "entrypoint": "index.html",    
     "sources": [
      "index.html",
