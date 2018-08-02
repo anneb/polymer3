@@ -20,7 +20,10 @@
           this.dispatchEvent(new CustomEvent('clickcounter', {detail: {count: this.counter}}));
         });
       }
-      
+      ready() {
+        super.ready();
+        console.log("ready");
+      }
       _createRoot() {
         console.log('_createRoot()');
         return this;
@@ -60,7 +63,7 @@
     <script>
       function handleEvent(e) {
         console.log('HandleEvent');
-        console.log(JSON.stringify(e));
+        console.log(e);
       }
       const myElement = document.getElementById('myelement');
       myElement.addEventListener('clickcounter', handleEvent);
